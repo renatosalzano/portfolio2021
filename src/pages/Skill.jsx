@@ -2,7 +2,7 @@ const Skill = () => {
   return (
     <main className="_code_style">
       <span>
-        <h1 className="_comment">{"// SKILL"}</h1>
+        <h1 className="_comment title">{"// SKILL"}</h1>
       </span>
       <br />
       <div className="skill_container">

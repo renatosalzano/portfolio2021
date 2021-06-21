@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace;
 }
 
 html {
@@ -26,6 +26,9 @@ svg {
   --app_column_width: 900px;
   --header_height: 40px;
   --main_flex_dir: "row";
+
+  --title_size: 32px;
+
   --code_font_size: 28px;
   --code_tab_width: 80px;
 
@@ -82,15 +85,16 @@ header {
     }
   }
   .header_button {
-    cursor: default;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+
     height: 100%;
-    position: relative;
+    padding: 0 10px;
+    font-size: 16px;
     color: var(--text_color);
     z-index: 200;
+    cursor: default;
     &:hover {
       background-color: #707070;
     }

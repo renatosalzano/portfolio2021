@@ -1,18 +1,9 @@
 main {
   padding: var(--main_padding);
-
-  .title {
-    font-size: 30px;
-  }
 }
 
-.home {
-  display: block;
-
-  h1 {
-    font-size: 40px;
-    white-space: break-spaces;
-  }
+.title {
+  font-size: var(--title_size);
 }
 
 /* 

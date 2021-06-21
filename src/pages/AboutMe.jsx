@@ -2,7 +2,7 @@ import picture from "../assets/me.jpg";
 const AboutMe = () => {
   return (
     <main className="_code_style">
-      <h1 className="_comment">{"// ABOUT_ME"}</h1>
+      <h1 className="_comment title">{"// ABOUT_ME"}</h1>
       <img className="picture" src={picture} alt="me" />
       <p>
         Attualmente sto seguendo il percorso di full-stack developer sulla

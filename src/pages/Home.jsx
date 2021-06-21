@@ -9,9 +9,8 @@ const Home = () => {
   return (
     <main className="home">
       <div className="_code_style">
-        <span>
-          <span className="_comment">{`// ${string.greet[language]}`}</span>
-        </span>
+        <h1 className="_comment title">{`// ${string.greet[language]}`}</h1>
+
         <br />
         <span>
           <span className="_const">{"const dev "}</span>
