@@ -1,5 +1,8 @@
 @media (max-width: 769px) {
   #root {
+    --header_height: 50px;
+    --menu_span_padding: 12px 20px;
+    --menu_item_padding: 12px 0;
     --main_padding: 10px;
     --code_font_size: 24px;
     --code_tab_width: 60px;
