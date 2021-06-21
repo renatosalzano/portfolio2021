@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "portfolio2021",
   "homepage": "http://renatosalzano.github.io/portfolio2021",
   "version": "0.1.0",
   "private": true,
@@ -43,5 +43,16 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatosalzano/portfolio2021.git"
+  },
+  "author": "Renato Salzano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatosalzano/portfolio2021/issues"
+  },
+  "description": ""
 }
