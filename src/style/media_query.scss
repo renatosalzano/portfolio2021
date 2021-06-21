@@ -3,7 +3,10 @@
     --header_height: 50px;
     --menu_span_padding: 12px 20px;
     --menu_item_padding: 12px 0;
+
     --main_padding: 10px;
+    --title_size: 28px;
+
     --code_font_size: 24px;
     --code_tab_width: 60px;
     --skill_bar_label_width: 180px;
@@ -15,6 +18,8 @@
 
 @media (max-width: 481px) {
   #root {
+    --title_size: 24px;
+
     --code_font_size: 18px;
     --code_tab_width: 24px;
     --skill_bar_label_width: 130px;
