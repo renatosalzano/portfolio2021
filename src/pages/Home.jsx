@@ -41,7 +41,7 @@ const Home = () => {
         <span className="_symbol">{"};"}</span>
         <br />
         <span>
-          <span className="_const">{"async function "}</span>
+          <span className="_const">{"function "}</span>
           <span className="_fun">{"do_something"}</span>
           <span className="_symbol">{"() {"}</span>
         </span>
