@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  background-color: #252526;
+  --app_column_width: 900px;
+  --header_height: 40px;
+  --main_flex_dir: "row";
+  --code_font_size: 28px;
+  --code_tab_width: 80px;
+
+  --main_padding: 20px;
+
+  --skill_bar_label_width: 180px;
+  --skill_progress_height: 28px;
+  --skill_progress_width: 280px;
+  --text_color: #cccccc;
+}
+
+.layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(auto, var(--app_column_width)) auto;
+  grid-template-areas: ". page .";
+  height: 100%;
+}
+
+/* 
+  HEADER
+  -------------------------------------------------------------------------------------
+*/
+
+.fixed_container {
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto minmax(auto, var(--app_column_width)) auto;
+  grid-template-areas: ". _header .";
+
+  width: 100%;
+  background-color: #404040;
+  z-index: 110;
+}
+
+header {
+  position: relative;
+  grid-area: _header;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--header_height);
+  .github_link {
+    height: var(--header_height);
+    width: var(--header_height);
+    color: var(--text_color);
+    svg {
+      padding: 8px;
+    }
+    &:hover {
+      background-color: #707070;
+    }
+  }
+  .header_button {
+    cursor: default;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    position: relative;
+    color: var(--text_color);
+    z-index: 200;
+    &:hover {
+      background-color: #707070;
+    }
+  }
+  .active {
+    background-color: #707070;
+  }
+}
+
+.menu_container {
+  position: absolute;
+  top: calc(var(--header_height));
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 10px 0;
+  overflow: hidden;
+  background-color: #3a3d41;
+  box-shadow: 0 4px 4px #00000052;
+  z-index: 100;
+  span,
+  a {
+    padding: 0px 20px;
+    color: var(--text_color);
+  }
+  hr {
+    margin: 5px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  li {
+    list-style: none;
+    cursor: pointer;
+    padding: 6px 0;
+
+    &:hover {
+      background-color: #01558d;
+    }
+  }
+}
+
+.trigger {
+  position: fixed;
+  top: var(--header_height);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 60;
+}
+
+/* 
+  PAGE
+  -------------------------------------------------------------------------------------
+*/
+
+.page {
+  position: relative;
+  margin-top: var(--header_height);
+  grid-area: page;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+
+  background-color: rgb(72, 107, 156);
+}

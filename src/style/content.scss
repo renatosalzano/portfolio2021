@@ -1,0 +1,28 @@
+.welcome_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  h2 {
+    white-space: break-spaces;
+  }
+  .picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+.skill_container {
+  display: flex;
+  justify-content: space-around;
+}
+.CircularProgressbar {
+  --trail_color: rgba(255, 255, 255, 0.185);
+  --path_color: blue;
+}
+div[data-test-id] {
+  width: 80px;
+}
+.icon {
+  width: 40px;
+}

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppProvider } from "./context/AppContext";
+import Router from "./Router";
+// STYLE
+import "./style/layout.scss";
+import "./style/code_style.scss";
+import "./style/page.scss";
+import "./style/media_query.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="layout">
+      <AppProvider>
+        <Router />
+      </AppProvider>
     </div>
   );
 }

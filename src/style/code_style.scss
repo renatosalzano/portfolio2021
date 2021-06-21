@@ -1,0 +1,61 @@
+._code_style {
+  display: flex;
+  flex-direction: column;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 300;
+  }
+
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--code_font_size);
+    white-space: break-spaces;
+    font-family: monospace;
+  }
+  ._return {
+    display: flex;
+    flex-direction: row;
+    .Typewriter {
+      display: flex;
+      flex-direction: row;
+      padding-left: 10px;
+      color: white;
+      .Typewriter__cursor {
+        transform: translateX(-8px) !important;
+      }
+    }
+  }
+  ._tab {
+    display: flex;
+    width: var(--code_tab_width);
+    height: 10px;
+  }
+  ._const {
+    color: #569cd6;
+  }
+  ._var {
+    color: #9cdcfe;
+  }
+  ._fun {
+    color: #d7ba7d;
+  }
+  ._string {
+    color: #ce9178;
+  }
+  ._symbol {
+    color: white;
+  }
+  ._statement {
+    color: #c586c0;
+  }
+  ._comment {
+    color: #6a9955;
+  }
+  ._number {
+    color: #b5cea8;
+  }
+}
