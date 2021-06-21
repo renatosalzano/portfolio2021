@@ -32,6 +32,7 @@ main {
   align-items: center;
   ._name {
     display: flex;
+    flex-shrink: 0;
     width: var(--skill_bar_label_width);
     color: white;
   }
