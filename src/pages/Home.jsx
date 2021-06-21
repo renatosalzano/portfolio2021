@@ -45,16 +45,7 @@ const Home = () => {
           <span className="_fun">{"do_something"}</span>
           <span className="_symbol">{"() {"}</span>
         </span>
-
         <span>
-          <span className="_tab" />
-          <span className="_statement">{"if "}</span>
-          <span className="_symbol">{"("}</span>
-          <span className="_var">{"awake"}</span>
-          <span className="_symbol">{") {"}</span>
-        </span>
-        <span>
-          <span className="_tab" />
           <span className="_tab" />
           <span className="_const">
             {"let "}
@@ -67,6 +58,15 @@ const Home = () => {
           <span className="_string">{'"coffee"'}</span>
           <span className="_symbol">{");"}</span>
         </span>
+
+        <span>
+          <span className="_tab" />
+          <span className="_statement">{"if "}</span>
+          <span className="_symbol">{"("}</span>
+          <span className="_var">{"awake"}</span>
+          <span className="_symbol">{") {"}</span>
+        </span>
+
         <span className="_return">
           <span className="_tab" />
           <span className="_tab" />
