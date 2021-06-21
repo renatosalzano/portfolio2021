@@ -28,6 +28,7 @@ main {
 
 .skill_bar {
   display: flex;
+  flex-wrap: nowrap !important;
   align-items: center;
   ._name {
     display: flex;
@@ -55,7 +56,7 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--dashed_gap);
     ._dash {
       height: 2px;
       width: 5%;
