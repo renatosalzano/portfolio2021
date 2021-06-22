@@ -20,6 +20,10 @@ svg {
   height: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 #root {
   min-height: 100%;
   background-color: #252526;
@@ -35,11 +39,14 @@ svg {
   --code_font_size: 28px;
   --code_tab_width: 80px;
 
+  --vsc_card_font_size: 18px;
+
   --main_padding: 20px;
 
   --skill_bar_label_width: 180px;
   --skill_progress_height: 28px;
   --skill_progress_width: 280px;
+  --skill_bar_gap: 4px;
   --dashed_gap: 8px;
 
   --text_color: #cccccc;
@@ -50,7 +57,7 @@ svg {
   display: grid;
   grid-template-columns: auto minmax(auto, var(--app_column_width)) auto;
   grid-template-areas: ". page .";
-  height: 100%;
+  min-height: 100vh;
 }
 
 /* 
@@ -158,6 +165,7 @@ header {
   position: relative;
   margin-top: var(--header_height);
   grid-area: page;
+  background-color: #1e1e1e;
 }
 
 article {

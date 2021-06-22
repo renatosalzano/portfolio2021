@@ -9,9 +9,11 @@
 
     --code_font_size: 24px;
     --code_tab_width: 60px;
+
     --skill_bar_label_width: 180px;
     --skill_progress_width: calc(100% - 160px);
     --skill_progress_height: 24px;
+    --skill_bar_gap: 6px;
     --dashed_gap: 8px;
   }
 }
@@ -25,6 +27,7 @@
     --skill_bar_label_width: 130px;
     --skill_progress_width: calc(100% - 130px);
     --skill_progress_height: 15px;
+    --skill_bar_gap: 10px;
     --dashed_gap: 4px;
   }
 }

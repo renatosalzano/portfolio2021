@@ -1,0 +1,92 @@
+._vsc_nav {
+  grid-area: page;
+  width: 100%;
+  ._card_container {
+    display: flex;
+    gap: 2px;
+    background-color: #252526;
+  }
+  ._card {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 6px 12px;
+    gap: 8px;
+    color: #aaaaaa;
+    background-color: #2d2d2d;
+    font-size: var(--vsc_card_font_size);
+    text-decoration: none;
+    svg {
+      width: 22px;
+    }
+    ._close {
+      opacity: 0;
+      transition: opacity 0.1s ease-out;
+    }
+    &:hover {
+      ._close {
+        opacity: 1;
+      }
+    }
+  }
+
+  ._active {
+    color: #6cb686;
+    background-color: #1e1e1e;
+    svg {
+      color: #cccccc;
+    }
+    ._close {
+      opacity: 1;
+    }
+  }
+}
+
+._vsc_style {
+  ._path_file {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    padding-left: 20px;
+    color: white;
+    svg {
+      width: 20px;
+      padding: 5px 0;
+    }
+    .pic_ico {
+      color: #ae80d3;
+      margin-right: 4px;
+    }
+  }
+
+  ._window {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4px 20px;
+  }
+
+  ._picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.js_icon {
+  color: #fdfd1d !important;
+}
+
+.sass_icon {
+  color: #9e3c76 !important;
+}
+
+.react_icon {
+  color: #3d7e99 !important;
+}
+
+.json_icon {
+  color: #cbcb41 !important;
+}

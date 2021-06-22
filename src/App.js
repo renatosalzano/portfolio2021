@@ -3,6 +3,7 @@ import Router from "./Router";
 // STYLE
 import "./style/layout.scss";
 import "./style/code_style.scss";
+import "./style/vsc_style.scss";
 import "./style/page.scss";
 import "./style/media_query.scss";
 

@@ -18,21 +18,21 @@ const Home = () => {
         </span>
         <span>
           <span className="_tab" />
-          <span className="_var">{"name"}</span>
+          <span className="_var">{string.key[language][0]}</span>
           <span className="_symbol">{":"}</span>
           <span className="_string">{' "Renato"'}</span>
           <span className="_symbol">{","}</span>
         </span>
         <span>
           <span className="_tab" />
-          <span className="_var">{"age"}</span>
+          <span className="_var">{string.key[language][1]}</span>
           <span className="_symbol">{":"}</span>
           <span className="_number">{" 28"}</span>
           <span className="_symbol">{","}</span>
         </span>
         <span>
           <span className="_tab" />
-          <span className="_var">{"type"}</span>
+          <span className="_var">{string.key[language][2]}</span>
           <span className="_symbol">{":"}</span>
           <span className="_string">{' "Front End"'}</span>
           <span className="_symbol">{","}</span>
@@ -41,7 +41,7 @@ const Home = () => {
         <br />
         <span>
           <span className="_const">{"function "}</span>
-          <span className="_fun">{"do_something"}</span>
+          <span className="_fun">{string.func[language]}</span>
           <span className="_symbol">{"() {"}</span>
         </span>
         <span>

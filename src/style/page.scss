@@ -14,7 +14,7 @@ main {
 .skill_container {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--skill_bar_gap);
 }
 
 .skill_bar {
@@ -57,8 +57,16 @@ main {
   }
 }
 
+/* 
+  ABOUT SECTION
+  ---------------------------------------------------------------------------------
+ */
+
+.about_page {
+  padding: 0;
+}
+
 .picture {
   width: 200px;
   height: auto;
-  border-radius: 50%;
 }
