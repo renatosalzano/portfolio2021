@@ -16,6 +16,13 @@
     --skill_bar_gap: 6px;
     --dashed_gap: 8px;
   }
+  ._vsc_nav {
+    --card_padding: 12px 6px;
+    --card_gap: 4px;
+    --card_font_size: 14px;
+    --card_svg_w: 18px;
+    --card_svg_h: 18px;
+  }
 }
 
 @media (max-width: 481px) {
@@ -29,5 +36,12 @@
     --skill_progress_height: 15px;
     --skill_bar_gap: 10px;
     --dashed_gap: 4px;
+  }
+  ._vsc_nav {
+    --card_padding: 12px 6px;
+    --card_gap: 4px;
+    --card_font_size: 14px;
+    --card_svg_w: 20px;
+    --card_svg_h: 20px;
   }
 }

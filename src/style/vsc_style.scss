@@ -1,6 +1,13 @@
 ._vsc_nav {
   grid-area: page;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+  --card_padding: 10px 12px;
+  --card_gap: 8px;
+  --card_font_size: 18px;
+  --card_svg_w: 22px;
+  --card_svg_h: 22px;
   ._card_container {
     display: flex;
     gap: 2px;
@@ -9,15 +16,15 @@
   ._card {
     display: flex;
     align-items: center;
-    height: 50px;
-    padding: 6px 12px;
-    gap: 8px;
+    padding: var(--card_padding);
+    gap: var(--card_gap);
     color: #aaaaaa;
     background-color: #2d2d2d;
-    font-size: var(--vsc_card_font_size);
+    font-size: var(--card_font_size);
     text-decoration: none;
     svg {
-      width: 22px;
+      width: var(--card_svg_w);
+      height: var(--card_svg_h);
     }
     ._close {
       opacity: 0;
