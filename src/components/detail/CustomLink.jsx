@@ -21,10 +21,7 @@ export const MailTo = ({ email, label, className }) => {
 
 export const CallTo = ({ number, label, className }) => {
   return (
-    <a
-      className={className ? className : "vsc__link"}
-      href={`callto:${number}`}
-    >
+    <a className={className ? className : "vsc__link"} href={`tel:${number}`}>
       {label ? label : number}
     </a>
   );

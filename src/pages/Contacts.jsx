@@ -24,7 +24,7 @@ const Contacts = () => {
       <Tag
         name="a"
         attributes={[{ key: "href", value: "callto:me" }]}
-        text_content={<CallTo number="3516122332" />}
+        text_content={<CallTo number="+393516122332" />}
       />
       <span className="_space"></span>
       <Tag
