@@ -2,10 +2,11 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { string } from "../language/strings";
+import { ExtLink } from "./detail/CustomLink";
 import { GH } from "./detail/Icon";
 
 const Header = () => {
-  const { nav_links } = useContext(AppContext);
+  const { nav_links, social_links } = useContext(AppContext);
   const [openMenu, setOpenMenu] = useState(false);
   const [openSet, setOpenSet] = useState(false);
 
@@ -22,14 +23,11 @@ const Header = () => {
   return (
     <div className="fixed_container">
       <header>
-        <a
+        <ExtLink
           className="github_link"
-          href="https://github.com/renatosalzano"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GH />
-        </a>
+          to="https://github.com/renatosalzano"
+          label={<GH />}
+        />
         <div
           className={`header_button ${openMenu ? "active" : ""}`}
           onClick={menu_handler}
@@ -38,11 +36,7 @@ const Header = () => {
           {openMenu && (
             <Menu
               links={nav_links}
-              socials={[
-                { label: "GitHub", path: "https://github.com/renatosalzano" },
-                { label: "LinkedIn", path: "/" },
-                { label: "Facebook", path: "/" },
-              ]}
+              socials={social_links}
               trigger_event={menu_handler}
             />
           )}
@@ -77,14 +71,7 @@ const Menu = ({ links, socials, trigger_event }) => {
         <hr />
         {socials.map((link) => (
           <li key={link.label}>
-            <a
-              className="social_link"
-              href={link.path}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {link.label}
-            </a>
+            <ExtLink to={link.path} label={link.label} />
           </li>
         ))}
       </ul>
@@ -94,7 +81,7 @@ const Menu = ({ links, socials, trigger_event }) => {
 };
 
 const Settings = ({ trigger_event }) => {
-  const { setLanguage } = useContext(AppContext);
+  const { setLanguage, language } = useContext(AppContext);
   const set_en = () => {
     setLanguage("en");
   };
@@ -104,7 +91,7 @@ const Settings = ({ trigger_event }) => {
   return (
     <>
       <ul className="menu_container">
-        <span>Language</span>
+        <span>{string.lang_string[language]}</span>
         <hr />
         <li onClick={set_en}>
           <span>English</span>

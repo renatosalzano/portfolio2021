@@ -13,8 +13,19 @@ export const AppProvider = ({ children }) => {
     { icon: <HTML />, label: "Contacts", ext: ".html", path: "/contacts" },
   ];
 
+  const social_links = [
+    { label: "GitHub", path: "https://github.com/renatosalzano" },
+    {
+      label: "LinkedIn",
+      path: "https://www.linkedin.com/in/renato-salzano-7b7741b0/",
+    },
+    { label: "Facebook", path: "https://www.facebook.com/Ren1592/" },
+  ];
+
   return (
-    <AppContext.Provider value={{ language, setLanguage, nav_links }}>
+    <AppContext.Provider
+      value={{ language, setLanguage, nav_links, social_links }}
+    >
       {children}
     </AppContext.Provider>
   );
