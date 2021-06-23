@@ -108,27 +108,3 @@
 .vsc__link {
   color: #cccccc;
 }
-/* 
-  CUSTOM SCROLL BAR
-------------------------------------------------------------------------------------
-*/
-
-/* width */
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border: 1px solid #8080804b;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #9292924b;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #cccccc5d;
-}
