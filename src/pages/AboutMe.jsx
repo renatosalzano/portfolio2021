@@ -9,14 +9,14 @@ const AboutMe = () => {
   const { language } = useContext(AppContext);
   return (
     <main className="about_page">
-      <div className="_vsc_style">
+      <div className="_vsc_style _code_style">
         <PathFile />
         <div className="_window">
           <div className="_picture">
             <img className="picture" src={picture} alt="me" />
           </div>
 
-          <p>{string.about[language]}</p>
+          <p className="_text">{string.about[language]}</p>
         </div>
       </div>
     </main>
@@ -24,14 +24,6 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
-const Cards = ({ cards }) => {
-  return cards.map((card) => (
-    <div className="_card" key={card}>
-      {card}
-    </div>
-  ));
-};
 
 const PathFile = () => {
   return (

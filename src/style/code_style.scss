@@ -7,9 +7,11 @@
   h3,
   h4 {
     font-weight: 300;
+    font-size: var(--code_font_size);
   }
 
-  span {
+  span,
+  div {
     display: flex;
     flex-wrap: wrap;
     font-size: var(--code_font_size);
@@ -37,6 +39,9 @@
   ._const {
     color: #569cd6;
   }
+  ._clousure {
+    color: #868686;
+  }
   ._var {
     color: #9cdcfe;
   }
@@ -49,6 +54,11 @@
   ._symbol {
     color: white;
   }
+  ._text {
+    color: white;
+    white-space: break-spaces;
+    font-size: var(--text_font_size);
+  }
   ._statement {
     color: #c586c0;
   }
@@ -57,5 +67,8 @@
   }
   ._number {
     color: #b5cea8;
+  }
+  ._space {
+    height: calc(var(--code_font_size) + 5px);
   }
 }

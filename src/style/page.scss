@@ -1,7 +1,3 @@
-main {
-  padding: var(--main_padding);
-}
-
 .title {
   font-size: var(--title_size);
 }
@@ -15,44 +11,45 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--skill_bar_gap);
-}
 
-.skill_bar {
-  display: flex;
-  flex-wrap: nowrap !important;
-  align-items: center;
-  ._name {
+  .skill_bar {
     display: flex;
-    flex-shrink: 0;
-    width: var(--skill_bar_label_width);
-    color: white;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    ._name {
+      display: flex;
+      flex-shrink: 0;
+      width: var(--skill_bar_label_width);
+      color: white;
+    }
   }
-}
 
-.bar_container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: var(--skill_progress_width);
-  height: var(--skill_progress_height);
-  .bar {
-    margin-top: 2px;
-    height: 100%;
-    background-color: white;
-  }
-  ._dashed {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .bar_container {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: var(--dashed_gap);
-    ._dash {
-      height: 2px;
-      width: 5%;
+    width: var(--skill_progress_width);
+    height: var(--skill_progress_height);
+    .bar {
+      margin-top: 2px;
+      height: 100%;
       background-color: white;
+    }
+    ._dashed {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: var(--dashed_gap);
+      ._dash {
+        height: 2px;
+        width: 5%;
+        background-color: white;
+      }
     }
   }
 }
@@ -69,4 +66,41 @@ main {
 .picture {
   width: 200px;
   height: auto;
+}
+
+/* 
+  WORK SECTION
+  ---------------------------------------------------------------------------------
+ */
+
+.works_page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  --work_font_size: 20px;
+  --work_thumb_size: 200px;
+  ._work_container {
+    display: flex;
+
+    gap: 20px;
+
+    ._thumb {
+      width: var(--work_thumb_size);
+      height: var(--work_thumb_size);
+    }
+    ._info {
+      display: flex;
+      flex-direction: column;
+      font-size: var(--work_font_size);
+      gap: 10px;
+      color: #cccccc;
+      ._description {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.work_link {
+  color: #6a9955;
 }

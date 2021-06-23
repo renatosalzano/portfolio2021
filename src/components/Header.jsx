@@ -2,10 +2,10 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { string } from "../language/strings";
-import { VscGithub } from "react-icons/vsc";
+import { GH } from "./detail/Icon";
 
 const Header = () => {
-  const { language, switch_language } = useContext(AppContext);
+  const { nav_links } = useContext(AppContext);
   const [openMenu, setOpenMenu] = useState(false);
   const [openSet, setOpenSet] = useState(false);
 
@@ -28,7 +28,7 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <VscGithub />
+          <GH />
         </a>
         <div
           className={`header_button ${openMenu ? "active" : ""}`}
@@ -37,7 +37,12 @@ const Header = () => {
           {"Menu"}
           {openMenu && (
             <Menu
-              links={["Home", "About Me", "Skill", "Works"]}
+              links={nav_links}
+              socials={[
+                { label: "GitHub", path: "https://github.com/renatosalzano" },
+                { label: "LinkedIn", path: "/" },
+                { label: "Facebook", path: "/" },
+              ]}
               trigger_event={menu_handler}
             />
           )}
@@ -56,15 +61,30 @@ const Header = () => {
 
 export default Header;
 
-const Menu = ({ links, trigger_event }) => {
+const Menu = ({ links, socials, trigger_event }) => {
   return (
     <>
       <ul className="menu_container">
         {links.map((link) => (
-          <li key={link}>
-            <Link to={`${link.toLowerCase()}`} onClick={trigger_event}>
-              {link}
+          <li key={link.label}>
+            <Link to={`${link.label.toLowerCase()}`} onClick={trigger_event}>
+              {link.label}
             </Link>
+          </li>
+        ))}
+        <hr />
+        <span>Social</span>
+        <hr />
+        {socials.map((link) => (
+          <li key={link.label}>
+            <a
+              className="social_link"
+              href={link.path}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.label}
+            </a>
           </li>
         ))}
       </ul>
