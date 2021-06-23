@@ -24,7 +24,7 @@ const Contacts = () => {
       <Tag
         name="a"
         attributes={[{ key: "href", value: "callto:me" }]}
-        text_content={<CallTo number="+393516122332" />}
+        text_content={<CallTo number="3516122332" />}
       />
       <span className="_space"></span>
       <Tag
@@ -32,7 +32,7 @@ const Contacts = () => {
         attributes={[{ key: "href", value: "https://wa.me" }]}
         text_content={
           <ExtLink
-            to={"https://wa.me/3516122332"}
+            to={"https://wa.me/393516122332"}
             label={string.what_app[language]}
           />
         }
