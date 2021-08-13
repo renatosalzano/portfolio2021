@@ -44,7 +44,7 @@ export const string = {
   },
   email: {
     en: "Send me an Email",
-    it: "Mandami una Email",
+    it: "Scrivimi una Email",
   },
 };
 
