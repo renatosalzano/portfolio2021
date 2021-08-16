@@ -20,6 +20,7 @@ export const AppProvider = ({ children }) => {
       path: "https://www.linkedin.com/in/renato-salzano-7b7741b0/",
     },
     { label: "Facebook", path: "https://www.facebook.com/Ren1592/" },
+    { label: "Instagram", path: "https://www.instagram.com/ren.xvii/" },
   ];
 
   return (

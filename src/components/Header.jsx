@@ -71,7 +71,11 @@ const Menu = ({ links, socials, trigger_event }) => {
         <hr />
         {socials.map((link) => (
           <li key={link.label}>
-            <ExtLink to={link.path} label={link.label} />
+            <ExtLink
+              to={link.path}
+              label={link.label}
+              className="vsc__link social_link"
+            />
           </li>
         ))}
       </ul>

@@ -17,6 +17,7 @@ const Contacts = () => {
           <MailTo
             email="renato.salzano92@gmail.com"
             label={string.email[language]}
+            className="vsc__link contact_link"
           />
         }
       />
@@ -24,7 +25,9 @@ const Contacts = () => {
       <Tag
         name="a"
         attributes={[{ key: "href", value: "callto:me" }]}
-        text_content={<CallTo number="+393516122332" />}
+        text_content={
+          <CallTo number="+393516122332" className="vsc__link contact_link" />
+        }
       />
       <span className="_space"></span>
       <Tag
@@ -34,6 +37,7 @@ const Contacts = () => {
           <ExtLink
             to={"https://wa.me/393516122332"}
             label={string.what_app[language]}
+            className="vsc__link contact_link"
           />
         }
       />
